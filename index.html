@@ -5,27 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det. | Information</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2946442f60.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header>
-        <a href="#"><img src="https://placehold.co/150x50" alt="placeholder image for logo"></a>
-        <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for burgermenu">
-            <p>Menu</p>
-        </a>
-        <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for search icon"></a>
-        <menu>
-            <li>Nyhedsbreve</li>
-            <li>Podcast</li>
-            <li>Køb Abonnement</li>
-        </menu>
-        <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for log in icon">
-            <p>Log Ind</p>
-        </a>
+        <div class="header__icons">
+
+            <i class="fa-solid fa-bars icon"></i>
+            <p class="header__p">Menu</p>
+
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+        </div>
+        <div>
+            <a href="#"><img src="./images/bladhoved_pdf.png" alt="Informations logo"></a>
+            <menu class="header__menu">
+                <li class="header__menuitem">Nyhedsbreve</li>
+                <li class="header__menuitem">Podcast</li>
+                <li class="header__menuitem header__menuitem-subscription">Køb Abonnement</li>
+            </menu>
+        </div>
+        <div class="header__icons">
+            <i class="fa-solid fa-user icon"></i>
+            <p class="header__p">Log Ind</p>
+            </a>
+        </div>
     </header>
-    <figure>
-        <img src="https://placehold.co/700x200" alt="placeholder for annoce billede">
-        <figcaption>annonce</figcaption>
+    <figure class="ad__container">
+        <img class="ad__img" src="https://placehold.co/700x200" alt="placeholder for annoce billede">
+        <figcaption class="ad__text">Annonce</figcaption>
     </figure>
     <main>
         <article>
@@ -232,8 +242,10 @@
                 <li>Hosted hos Sentia</li>
             </nav>
         </section>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, magnam ducimus, exercitationem saepe unde esse facere, explicabo consequatur autem maiores accusamus nam ullam sequi soluta? Dolores debitis itaque accusantium culpa alias sint? Tenetur, earum ex doloremque aut unde non quis.</p>
-<a href="#">Skriv til os</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, magnam ducimus, exercitationem saepe unde esse
+            facere, explicabo consequatur autem maiores accusamus nam ullam sequi soluta? Dolores debitis itaque
+            accusantium culpa alias sint? Tenetur, earum ex doloremque aut unde non quis.</p>
+        <a href="#">Skriv til os</a>
 
     </footer>
 </body>
