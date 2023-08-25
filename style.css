@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 
-header {
+
+.site__header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+
 }
 
 .header__icons {
@@ -39,9 +40,14 @@ header {
     padding: 1em 0;
 }
 
-.header__menuitem-subscription {
+.brandcolor {
     color: red;
+    font-weight: 700;
 
+}
+
+.brandcolor-light {
+    color: grey;
 }
 
 .ad__container {
@@ -60,14 +66,150 @@ header {
 
 }
 
-.main__article{
-    text-align: center;
-    margin: auto;
-}
-.main__articleHeadline{
-    font-size: xx-large;
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
 }
 
-.main__article-subscribe{
-    display: none;
+.main__article {
+    text-align: center;
+
+    grid-area: 1 / 2 / 2 / 3;
+
+
 }
+
+.main__articleMiddle {
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+}
+
+.main__articleLast {
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: center;
+}
+
+.main__articleSection {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+padding: 2em 3em;
+
+
+}
+
+
+.main__articleHeadline {
+    font-size: xx-large;
+    margin-left: 5.5em;
+    text-align: left;
+
+
+}
+
+.main__articleFigure {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 2.5em;
+}
+
+
+
+
+.main__article-subscribe {
+    grid-area: 2 / 2 / 3 / 3;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 1) 100%);
+    position: relative;
+
+}
+
+.main__article-subscribeHeadline {
+    font-size: large;
+    padding: 0 1.5em 1.5em 1.5em;
+
+}
+
+.main__article-subscribeLink {
+    background-color: red;
+    padding: .5em;
+    border-radius: 2px;
+    width: 40%;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+
+.main__article-subscribeText {
+    padding: 1em;
+    z-index: 1;
+    color: grey;
+
+}
+
+.main__article-subscribeText-Login {
+    text-decoration: underline;
+    color: rgb(70, 70, 70);
+}
+
+.main__articleAside {
+    margin-left: 10em;
+    padding: 1em;
+}
+
+.main__articleDescription {
+    margin-left: 10em;
+    padding: 1em;
+    text-align: left;
+}
+
+.main__articleImage {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.main__articleImage-description {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.main__articleImage-descriptionAuthor {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.main__articleHeader {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.main__articleHeaderInfo {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__articleAuthors {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 2em;
+
+}
+
+.main__articleTextContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.main__articleText {
+    grid-area: 1 / 2 / 3 / 3;
+}
+

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="site__header">
         <div class="header__icons">
 
             <i class="fa-solid fa-bars icon"></i>
@@ -24,7 +24,7 @@
             <menu class="header__menu">
                 <li class="header__menuitem">Nyhedsbreve</li>
                 <li class="header__menuitem">Podcast</li>
-                <li class="header__menuitem header__menuitem-subscription">Køb Abonnement</li>
+                <li class="header__menuitem brandcolor">Køb Abonnement</li>
             </menu>
         </div>
         <div class="header__icons">
@@ -39,46 +39,40 @@
     </figure>
     <main>
         <article class="main__article">
-            <section>
-                <h1 class="main__articleHeadline">Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
-                <div class="main__article-subscribe">
-                <h2 >Vores abonnementer kalder os bla bla bla</h2>
-                <a href="#">Klik her</a>
-                <p>Allerede abonnement? <a href="#">Log ind her</a></p>
-            </div>
+
+            <section class="main__articleSection">
+                <aside class="main__articleAside">
+                    <span class="brandcolor">Abonnemt</span>
+                    <span class="brandcolor-light">Læsetid: 7 min</span>
+                </aside>
+                <h1 class="main__articleHeadline">Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det
+                </h1>
+                <!-- Underubrik -->
+                <p class="main__articleDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Adipisci suscipit debitis inventore sunt totam
+                    quibusdam nemo hic, id ut, blanditiis nostrum similique maiores dolores eaque fugit quidem
+                    voluptates, a
+                    deserunt incidunt. Exercitationem aliquid possimus nobis animi nihil atque voluptas earum quos
+                    eligendi.</p>
+                <figure class="main__articleFigure">
+                    <img class="main__articleImage" src="https://placehold.co/800x500"
+                        alt="placeholder for article image">
+                    <p class="main__articleImage-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Laboriosam possimus fugiat vero eos! Sit
+                        qui perferendis autem necessitatibus laudantium ipsam.</p>
+                    <figcaption class="main__articleImageAuthor">Billedet taget af Peter Nygaard Christensen
+                    </figcaption>
+                </figure>
+
             </section>
-            <aside>
-                <span>Abonnemt</span>
-                <span>Læsetid: 7 min</span>
-            </aside>
-            <header>
-                <span>Udland</span>
-                <time datetime="2018-05-07">7. maj 2018</time>
-                <span>Kommentarer <span>(2)</span></span>
-            </header>
-            <!-- Underubrik -->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci suscipit debitis inventore sunt totam
-                quibusdam nemo hic, id ut, blanditiis nostrum similique maiores dolores eaque fugit quidem voluptates, a
-                deserunt incidunt. Exercitationem aliquid possimus nobis animi nihil atque voluptas earum quos eligendi,
-                corporis natus, ratione sit a ipsa aspernatur tempore. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolore, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis!</p>
-            <figure>
-                <img src="https://placehold.co/500x500" alt="placeholder for article image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam possimus fugiat vero eos! Sit
-                    qui perferendis autem necessitatibus laudantium ipsam.</p>
-                <figcaption>Billedet taget af Peter Nygaard Christensen</figcaption>
-            </figure>
-            <!-- brødtekst -->
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut reprehenderit dicta deleniti
-                incidunt sint optio alias, maxime veritatis vero est odio eligendi quisquam voluptate officia earum
-                praesentium totam non, iusto eum modi molestias saepe eaque? Culpa, totam nostrum! Aperiam,
-                reprehenderit laudantium temporibus reiciendis unde debitis pariatur quo placeat beatae ducimus.
-                Accusantium, architecto, modi blanditiis, tempore temporibus alias aliquam voluptatum doloremque eius
-                dolorum quia. Error minus corporis hic magni modi blanditiis expedita sint quaerat fugiat? Placeat iure
-                nesciunt culpa aperiam, eos, ab est aspernatur ipsa obcaecati maxime neque, eveniet totam commodi minus
-                tenetur facilis tempora! Dicta doloremque cumque quasi odio?</p>
-            <footer>
-                <article>
+
+            <header class="main__articleHeader">
+                <div class="main__articleHeaderInfo">
+                    <span class="brandcolor">Udland</span>
+                    <time datetime="2018-05-07">7. maj 2018</time>
+                    <span>Kommentarer <span>(2)</span></span>
+                </div>
+                <article class="main__articleAuthors">
                     <img src="https://placehold.co/10x10" alt="placeholder image for author icon"><span>Jakob
                         Stein</span>
                     <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for twitter icon">Tweet</a>
@@ -87,15 +81,45 @@
                     <span>Peter Nygaard Christiensen</span>
                     <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for email icon">email</a>
                 </article>
+            </header>
 
-                <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for facebook icon">Del</a>
-                <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for twitter icon">Tweet</a>
-                <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for email icon">email</a>
 
+
+
+            <!-- Abonnemt log in eller buy. overlay og z-index. lav overly med grid -->
+            <div class="main__articleTextContainer">
+                <div class="main__article-subscribe">
+                    <h2 class="main__article-subscribeHeadline">Vores abonnementer kalder os bla bla bla</h2>
+                    <a class="main__article-subscribeLink" href="#">Klik her</a>
+                    <p class="main__article-subscribeText">Allerede abonnement? <a href="#" class="main__article-subscribeText-Login">Log ind her</a></p>
+                </div>
+                <!-- brødtekst -->
+                <p class="main__articleText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut
+                    reprehenderit dicta deleniti
+                    incidunt sint optio alias, maxime veritatis vero est odio eligendi quisquam voluptate officia
+                    earum
+                    praesentium totam non, iusto eum modi molestias saepe eaque? Culpa, totam nostrum! Aperiam,
+                    reprehenderit laudantium temporibus reiciendis unde debitis pariatur quo placeat beatae ducimus.
+                    Accusantium, architecto, modi blanditiis, tempore temporibus alias aliquam voluptatum doloremque
+                    eius
+                    dolorum quia. Error minus corporis hic magni modi blanditiis expedita sint quaerat fugiat?
+                    Placeat iure
+                    nesciunt culpa aperiam, eos, ab est aspernatur ipsa obcaecati maxime neque, eveniet totam
+                    commodi minus
+                    tenetur facilis tempora! Dicta doloremque cumque quasi odio?</p>
+            </div>
+            <footer class="main__articleFooter">
+
+                <div class="main__articleLinks">
+                    <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for facebook icon">Del</a>
+                    <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for twitter icon">Tweet</a>
+                    <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for email icon">email</a>
+                </div>
             </footer>
+            </div>
         </article>
 
-        <article>
+        <article class="main__articleMiddle">
             <h1>Har du læst?</h1>
             <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for arrow"></a>
             <a href="#"><img src="https://placehold.co/10x10" alt="placeholder image for arrow"></a>
@@ -159,7 +183,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, dicta?</p>
             </section>
         </article>
-        <section>
+        <section class="main__articleLast">
             <ul>
                 <a href="">
                     <li>Anbefalinger</li>
