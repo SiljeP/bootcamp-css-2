@@ -9,26 +9,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 .header__icons {
     display: flex;
     margin: auto;
-
-
 }
 
 .icon {
     padding: 0 1em;
-
 }
 
 .header__menu {
     display: flex;
     justify-content: space-evenly;
 }
-
 .header__p {
     text-transform: uppercase;
     font-weight: 700;
@@ -39,11 +34,9 @@
     font-weight: 700;
     padding: 1em 0;
 }
-
 .brandcolor {
     color: red;
     font-weight: 700;
-
 }
 
 .brandcolor-light {
@@ -74,10 +67,7 @@ main {
 
 .main__article {
     text-align: center;
-
     grid-area: 1 / 2 / 2 / 3;
-
-
 }
 
 .main__articleMiddle {
@@ -91,13 +81,11 @@ main {
 }
 
 .main__articleSection {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-padding: 2em 3em;
-
-
+    padding: 2em 3em;
 }
 
 
@@ -115,9 +103,6 @@ padding: 2em 3em;
     grid-template-rows: repeat(2, 1fr);
     padding-top: 2.5em;
 }
-
-
-
 
 .main__article-subscribe {
     grid-area: 2 / 2 / 3 / 3;
@@ -212,4 +197,3 @@ padding: 2em 3em;
 .main__articleText {
     grid-area: 1 / 2 / 3 / 3;
 }
-
